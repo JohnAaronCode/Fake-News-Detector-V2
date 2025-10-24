@@ -74,25 +74,21 @@ function isInvalidInput(text) {
 
 // 🧾 Display the analysis result
 function displayResult(data) {
-  const isFake = data.prediction === 'FAKE';
-  const confidence = Math.round(data.confidence * 100);
+    const isFake = data.prediction === 'FAKE';
 
-  resultCard.classList.remove('real', 'fake');
-  resultCard.classList.add(isFake ? 'fake' : 'real');
+    resultCard.classList.remove('real', 'fake');
+    resultCard.classList.add(isFake ? 'fake' : 'real');
 
-  // Modern + professional centered result
-  resultCard.innerHTML = `
-    <div style="text-align:center; padding: 10px;">
-      <h2 style="font-size:2rem; font-weight:700; margin-bottom:6px;">
-        ${isFake ? 'FAKE' : 'REAL'}
-      </h2>
-      <p style="font-size:1.1rem; color:#666;">
-        Confidence Level: <strong>${confidence}%</strong>
-      </p>
-    </div>
-  `;
+    // Modern + professional centered result
+    resultCard.innerHTML = `
+        <div style="text-align:center; padding: 10px;">
+            <h2 style="font-size:2rem; font-weight:700; margin-bottom:6px;">
+                ${isFake ? 'FAKE' : 'REAL'}
+            </h2>
+        </div>
+    `;
 
-  resultContainer.classList.remove('hidden');
+    resultContainer.classList.remove('hidden');
 }
 
 // Feedback buttons
