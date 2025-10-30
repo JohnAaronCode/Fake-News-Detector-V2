@@ -7,7 +7,10 @@ const themeToggle = document.getElementById('themeToggle');
 const correctBtn = document.getElementById('correctBtn');
 const incorrectBtn = document.getElementById('incorrectBtn');
 
-const API_URL = 'http://localhost:5000';
+// Use relative URL for production, localhost for development
+const API_URL = window.location.hostname === 'localhost' 
+  ? 'http://localhost:5000' 
+  : '';
 
 // Theme toggle
 themeToggle.addEventListener('click', () => {

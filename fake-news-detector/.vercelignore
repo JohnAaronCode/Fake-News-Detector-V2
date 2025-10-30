@@ -1,0 +1,13 @@
+__pycache__
+*.pyc
+.git
+.vscode
+backend/
+frontend/
+node_modules
+api/data/
+*.md
+train_model.py
+train_model_ai.py
+.venv/
+*.backup

@@ -1,0 +1,12 @@
+{
+  "name": "clarifai-fake-news-detector",
+  "version": "1.0.0",
+  "description": "AI-powered fake news detection system",
+  "scripts": {
+    "build": "echo 'No build needed for static frontend'",
+    "start": "python backend/app.py"
+  },
+  "keywords": ["fake-news", "ai", "machine-learning", "flask"],
+  "author": "John Aaron Tumangan",
+  "license": "MIT"
+}

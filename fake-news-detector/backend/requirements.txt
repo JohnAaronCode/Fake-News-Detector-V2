@@ -4,3 +4,12 @@ pandas
 scikit-learn
 joblib
 numpy
+nltk
+textblob
+spacy
+transformers
+torch
+tensorflow
+sentence-transformers
+xgboost
+lightgbm

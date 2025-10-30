@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ClarifAI</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="header">
+        <div class="title-section">
+          <div class="logo">🔍</div>
+          <div>
+            <h1>ClarifAI: Fake News Detection System</h1>
+            <p class="subtitle">
+              Empowering truth through AI-driven news credibility and authenticity analysis
+            </p>
+          </div>
+        </div>
+        <button id="themeToggle" class="theme-toggle">🌙</button>
+      </div>
+
+      <div class="content">
+        <h2 class="center">Real or Fake?</h2>
+        <p class="description center">Enter news content to verify its authenticity</p>
+
+        <textarea
+          id="newsInput"
+          class="input-area"
+          placeholder="Paste news article, headline, or content here..."
+          rows="6"
+        ></textarea>
+
+        <button class="analyze-btn" id="analyzeBtn">Analyze</button>
+
+        <div id="loadingSpinner" class="loading hidden">
+          <div class="spinner"></div>
+          <p>Analyzing content...</p>
+        </div>
+
+        <div id="resultContainer" class="result-container hidden">
+          <div id="resultCard" class="result-card">
+            <h2 id="resultLabel" class="result-label"></h2>
+            <p id="resultMessage" class="result-message"></p>
+            <p id="confidenceLevel" class="confidence"></p>
+          </div>
+
+          <div class="feedback-section">
+            <p>Was our analysis accurate?</p>
+            <div class="feedback-buttons">
+              <button class="feedback-btn correct" id="correctBtn">✓ Yes</button>
+              <button class="feedback-btn incorrect" id="incorrectBtn">✗ No</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer">
+        © 2025 ClarifAI • Developed by <strong>John Aaron Tumangan</strong> • AI-Powered Truth Detection
+      </footer>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
