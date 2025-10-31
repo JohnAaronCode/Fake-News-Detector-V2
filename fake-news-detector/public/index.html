@@ -40,13 +40,30 @@
           <p>Analyzing content...</p>
         </div>
 
+        <!-- New detailed result container with sources and fact-checks -->
         <div id="resultContainer" class="result-container hidden">
-          <div id="resultCard" class="result-card">
-            <h2 id="resultLabel" class="result-label"></h2>
-            <p id="resultMessage" class="result-message"></p>
-            <p id="confidenceLevel" class="confidence"></p>
+          <!-- Status Header -->
+          <div id="statusHeader" class="status-header"></div>
+
+          <!-- Confidence Section -->
+          <div class="confidence-section">
+            <p class="confidence-label">Confidence Score</p>
+            <div class="confidence-bar-container">
+              <div id="confidenceBar" class="confidence-bar"></div>
+            </div>
+            <p id="confidenceValue" class="confidence-value"></p>
           </div>
 
+          <!-- Sources Section -->
+          <div id="sourcesSection" class="sources-section"></div>
+
+          <!-- Warning Section -->
+          <div id="warningSection" class="warning-section hidden"></div>
+
+          <!-- Action Button -->
+          <div id="actionButtonContainer" class="action-button-container"></div>
+
+          <!-- Feedback Section -->
           <div class="feedback-section">
             <p>Was our analysis accurate?</p>
             <div class="feedback-buttons">
